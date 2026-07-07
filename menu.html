@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<title>Suffe Catering | Catering Menus</title>
+
+<style>
+    
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#f8f8f8;
+color:#333;
+}
+
+/* HEADER */
+
+.header{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:18px 70px;
+
+background:white;
+
+box-shadow:0 3px 15px rgba(0,0,0,.08);
+
+position:sticky;
+top:0;
+z-index:9999;
+
+}
+
+.logo img{
+height:90px;
+}
+
+.menu{
+display:flex;
+gap:35px;
+}
+
+.menu a{
+
+text-decoration:none;
+color:#333;
+font-size:18px;
+font-weight:bold;
+transition:.3s;
+
+}
+
+.menu a:hover{
+
+color:#B98A28;
+
+}
+
+.book-btn{
+
+background:#B98A28;
+color:white;
+padding:14px 30px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+
+}
+
+.book-btn:hover{
+
+background:#6B7D1E;
+
+}
+
+.language-switcher{
+
+display:flex;
+gap:10px;
+
+}
+
+.language-switcher button{
+
+padding:8px 14px;
+border-radius:25px;
+border:2px solid #B98A28;
+background:white;
+color:#B98A28;
+font-weight:bold;
+cursor:pointer;
+
+}
+
+.language-switcher button:hover{
+
+background:#B98A28;
+color:white;
+
+}
+
+.menu-toggle{
+
+display:none;
+
+}
+
+/* HERO */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:80px 10%;
+    gap:60px;
+    background:#f8f8f8;
+}
+
+.hero-left{
+    flex:1;
+}
+
+.hero-right{
+    flex:1;
+    display:flex;
+    justify-content:flex-end;
+}
+
+.hero-right img{
+    width:100%;
+    max-width:700px;
+    border-radius:20px;
+    display:block;
+}
+
+.hero-subtitle{
+    color:#B98A28;
+    font-size:18px;
+    letter-spacing:3px;
+    margin-bottom:20px;
+    display:block;
+}
+
+.hero h1{
+    font-size:68px;
+    line-height:1.1;
+    margin-bottom:25px;
+    color:#222;
+}
+
+.hero-text{
+    font-size:20px;
+    color:#666;
+    line-height:1.8;
+    margin-bottom:35px;
+    max-width:600px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+}
+
+.hero-btn,
+.hero-btn-outline{
+    padding:16px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero-btn{
+    background:#B98A28;
+    color:#fff;
+}
+
+.hero-btn-outline{
+    border:2px solid #B98A28;
+    color:#B98A28;
+}
+
+.package-btn{
+
+display:inline-block;
+margin-bottom:30px;
+padding:15px 35px;
+background:#B98A28;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:bold;
+
+}
+
+.package-btn:hover{
+
+background:#6B7D1E;
+
+}
+/* CATERING MENUS */
+
+.catering-menus{
+    padding:100px 10%;
+    background:#fff;
+    text-align:center;
+}
+
+.catering-menus h4{
+    color:#B98A28;
+    letter-spacing:3px;
+    margin-bottom:15px;
+}
+
+.catering-menus h2{
+    font-size:48px;
+    margin-bottom:60px;
+}
+
+.menu-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:35px;
+}
+
+.menu-card{
+    background:#f8f8f8;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.menu-card:hover{
+    transform:translateY(-10px);
+}
+
+.menu-card h3{
+    margin:25px 0 15px;
+    font-size:28px;
+}
+
+.menu-card p{
+    padding:0 25px;
+    line-height:1.8;
+    color:#666;
+    margin-bottom:30px;
+}
+/* WHATSAPP */
+
+.whatsapp{
+
+position:fixed;
+bottom:25px;
+right:25px;
+
+width:70px;
+height:70px;
+
+background:#25D366;
+
+border-radius:50%;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+font-size:38px;
+
+text-decoration:none;
+
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+z-index:9999;
+
+}
+
+/* FOOTER */
+
+.footer{
+
+background:#222;
+
+color:white;
+
+padding:70px 10% 30px;
+
+}
+
+.footer-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:40px;
+
+}
+
+.footer h3{
+
+color:#B98A28;
+
+margin-bottom:20px;
+
+}
+
+.footer p,
+.footer a{
+
+color:#ddd;
+
+text-decoration:none;
+
+line-height:2;
+
+}
+
+.footer a:hover{
+
+color:#B98A28;
+
+}
+
+.footer-bottom{
+
+text-align:center;
+
+margin-top:40px;
+
+padding-top:20px;
+
+border-top:1px solid rgba(255,255,255,.15);
+
+}
+.footer-bottom{
+
+text-align:center;
+
+margin-top:40px;
+
+padding-top:20px;
+
+border-top:1px solid rgba(255,255,255,.15);
+
+}
+/* MOBILE */
+
+@media (max-width:900px){
+
+.header{
+padding:15px 20px;
+position:relative;
+}
+
+.logo img{
+height:60px;
+}
+
+.menu-toggle{
+display:block;
+font-size:35px;
+cursor:pointer;
+}
+
+.menu{
+display:none;
+position:absolute;
+top:100%;
+left:0;
+width:100%;
+background:white;
+flex-direction:column;
+align-items:center;
+gap:20px;
+padding:20px 0;
+box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+.menu.active{
+display:flex;
+}
+
+.menu a{
+width:100%;
+padding:15px;
+text-align:center;
+border-bottom:1px solid #eee;
+}
+
+.book-btn{
+    display:none;
+}
+
+.language-switcher{
+    display:flex;
+    gap:10px;
+    justify-content:center;
+    align-items:center;
+}
+
+.language-switcher button{
+    padding:6px 12px;
+    font-size:13px;
+    border-radius:20px;
+}
+
+/* HERO MOBILE */
+
+.hero{
+    min-height:auto;
+    flex-direction:column;
+    text-align:center;
+    padding:50px 20px;
+    gap:30px;
+}
+
+.hero-left,
+.hero-right{
+    width:100%;
+}
+
+.hero-right{
+    justify-content:center;
+}
+
+.hero-right img{
+    width:100%;
+    max-width:420px;
+}
+
+.hero-subtitle{
+    font-size:14px;
+}
+
+.hero h1{
+    font-size:42px;
+    line-height:1.2;
+}
+
+.hero-text{
+    font-size:17px;
+    line-height:1.7;
+    max-width:100%;
+}
+
+.hero-buttons{
+    flex-direction:column;
+    align-items:center;
+}
+
+.hero-btn,
+.hero-btn-outline{
+    width:260px;
+    text-align:center;
+}
+} 
+</style>
+
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="logo">
+<a href="index.html">
+<img src="images/logo/suffe-logo.png" alt="Suffe Catering">
+</a>
+</div>
+
+<div class="menu-toggle">
+☰
+</div>
+
+<nav class="menu">
+
+<a href="index.html" data-en="Home" data-tr="Ana Sayfa">Home</a>
+
+<a href="index.html#about" data-en="About" data-tr="Hakkımızda">About</a>
+
+<a href="index.html#services" data-en="Services" data-tr="Hizmetler">Services</a>
+
+<a href="menu.html" data-en="Catering Menus" data-tr="Catering Menüleri">Catering Menus</a>
+
+<a href="index.html#packages" data-en="Packages" data-tr="Paketler">Packages</a>
+
+<a href="index.html#gallery" data-en="Gallery" data-tr="Galeri">Gallery</a>
+
+<a href="index.html#contact" data-en="Contact" data-tr="İletişim">Contact</a>
+
+</nav>
+
+<div class="language-switcher">
+
+<button id="tr-btn">🇹🇷 TR</button>
+
+<button id="en-btn">🇬🇧 EN</button>
+
+</div>
+
+<a
+href="index.html#reservation"
+class="book-btn"
+data-en="BOOK NOW"
+data-tr="REZERVASYON">
+
+BOOK NOW
+
+</a>
+
+</header>
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-left">
+
+<span class="hero-subtitle"
+data-en="OUR CATERING MENUS"
+data-tr="CATERING MENÜLERİMİZ">
+OUR CATERING MENUS
+</span>
+
+<h1
+data-en="Catering Menus <br> For Every Occasion"
+data-tr="Her Organizasyon İçin <br> Catering Menüleri">
+Catering Menus <br> For Every Occasion
+</h1>
+
+<p class="hero-text"
+data-en="Discover our premium catering menus specially prepared for weddings, corporate events, yacht parties, birthdays, funerals and private events."
+data-tr="Düğünler, kurumsal etkinlikler, yat davetleri, doğum günleri, cenazeler ve özel organizasyonlar için hazırladığımız premium catering menülerimizi keşfedin.">
+
+Discover our premium catering menus specially prepared for weddings, corporate events, yacht parties, birthdays, funerals and private events.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#catering-menus"
+class="hero-btn"
+data-en="VIEW MENUS"
+data-tr="MENÜLERİ GÖR">
+VIEW MENUS
+</a>
+
+<a href="index.html#reservation"
+class="hero-btn-outline"
+data-en="REQUEST QUOTE"
+data-tr="TEKLİF AL">
+REQUEST QUOTE
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-right">
+
+<img src="images/menu/menu-hero.jpg"
+alt="Premium Catering">
+
+</div>
+
+</section>
+
+
+
+<!-- CATERING MENUS -->
+
+<section class="catering-menus" id="catering-menus">
+<h4
+data-en="OUR CATERING MENUS"
+data-tr="CATERING MENÜLERİMİZ">
+
+OUR CATERING MENUS
+
+</h4>
+
+
+<h2
+data-en="Choose the Perfect Menu For Your Event"
+data-tr="Etkinliğiniz İçin En Uygun Menüyü Seçin">
+Choose the Perfect Menu For Your Event
+</h2>
+
+<div class="menu-grid">
+
+<!-- Wedding -->
+
+<div class="menu-card">
+
+<h3
+data-en="💍 Wedding Catering"
+data-tr="💍 Düğün Catering">
+💍 Wedding Catering
+</h3>
+
+<p
+data-en="Elegant buffet menus, live cooking stations, desserts, beverages and complete wedding catering service."
+data-tr="Açık büfe menüler, canlı pişirme istasyonları, tatlılar, içecekler ve eksiksiz düğün catering hizmeti.">
+Elegant buffet menus, live cooking stations, desserts, beverages and complete wedding catering service.
+</p>
+
+<a
+href="index.html#reservation"
+class="package-btn"
+
+data-en="Request Quote"
+data-tr="Teklif Al">
+
+Request Quote
+
+</a>
+
+</div>
+
+<!-- Funeral -->
+
+<div class="menu-card">
+
+
+
+<h3
+data-en="⚱️ Funeral Catering"
+data-tr="⚱️ Cenaze Catering">
+⚱️ Funeral Catering
+</h3>
+
+<p
+data-en="Professional catering service with carefully prepared traditional menus for funeral gatherings."
+data-tr="Cenaze organizasyonları için özenle hazırlanmış geleneksel menüler ve profesyonel catering hizmeti.">
+Professional catering service with carefully prepared traditional menus for funeral gatherings.
+</p>
+<a
+href="index.html#reservation"
+class="package-btn"
+
+data-en="Request Quote"
+data-tr="Teklif Al">
+
+Request Quote
+
+</a>
+
+</div>
+
+<!-- Corporate -->
+
+<div class="menu-card">
+
+
+
+<h3
+data-en="🏢 Corporate Catering"
+data-tr="🏢 Kurumsal Catering">
+🏢 Corporate Catering
+</h3>
+
+<p
+data-en="Coffee breaks, business lunches, seminars, conferences and company event catering."
+data-tr="Kahve molaları, iş yemekleri, seminerler, konferanslar ve şirket organizasyonları için catering hizmeti.">
+Coffee breaks, business lunches, seminars, conferences and company event catering.
+</p>
+<a
+href="index.html#reservation"
+class="package-btn"
+
+data-en="Request Quote"
+data-tr="Teklif Al">
+
+Request Quote
+
+</a>
+
+</div>
+
+
+<!-- Yacht -->
+
+<div class="menu-card">
+
+
+<h3
+data-en="🚤 Yacht Catering"
+data-tr="🚤 Yat Catering">
+🚤 Yacht Catering
+</h3>
+
+<p
+data-en="Luxury catering menus prepared for yachts, private cruises and sea events."
+data-tr="Yatlar, özel tekne turları ve deniz organizasyonları için lüks catering menüleri.">
+Luxury catering menus prepared for yachts, private cruises and sea events.
+</p>
+
+<a
+href="index.html#reservation"
+class="package-btn"
+
+data-en="Request Quote"
+data-tr="Teklif Al">
+
+Request Quote
+
+</a>
+
+</div>
+
+<!-- Birthday -->
+
+<div class="menu-card">
+
+
+
+<h3
+data-en="🎂 Birthday Catering"
+data-tr="🎂 Doğum Günü Catering">
+🎂 Birthday Catering
+</h3>
+
+<p
+data-en="Birthday party menus including cakes, desserts, snacks and refreshing beverages."
+data-tr="Pastalar, tatlılar, atıştırmalıklar ve içeceklerden oluşan doğum günü menüleri.">
+Birthday party menus including cakes, desserts, snacks and refreshing beverages.
+</p>
+
+<a
+href="index.html#reservation"
+class="package-btn"
+
+data-en="Request Quote"
+data-tr="Teklif Al">
+
+Request Quote
+
+</a>
+
+</div>
+
+<!-- Villa -->
+
+<div class="menu-card">
+
+
+<h3
+data-en="🏡 Private Villa Catering"
+data-tr="🏡 Özel Villa Catering">
+🏡 Private Villa Catering
+</h3>
+
+<p
+data-en="Premium catering service designed for luxury villas, gardens and private residences."
+data-tr="Lüks villalar, bahçeler ve özel konutlar için premium catering hizmeti.">
+Premium catering service designed for luxury villas, gardens and private residences.
+</p>
+<a
+href="index.html#reservation"
+class="package-btn"
+
+data-en="Request Quote"
+data-tr="Teklif Al">
+
+Request Quote
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+<!-- WHATSAPP -->
+
+<a href="https://wa.me/905325695040"
+class="whatsapp"
+target="_blank">
+
+💬
+
+</a>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<div class="footer-container">
+
+<div>
+
+<h3>Suffe Catering</h3>
+
+<p>
+Luxury Catering & Event Organization in Marmaris.
+</p>
+
+<p>
+Making every event unforgettable with premium food and professional service.
+</p>
+
+</div>
+
+<div>
+
+<h3
+data-en="Quick Links"
+data-tr="Hızlı Bağlantılar">
+Quick Links
+</h3>
+
+<p>
+<a href="index.html"
+data-en="Home"
+data-tr="Ana Sayfa">
+Home
+</a>
+</p>
+
+<p>
+<a href="index.html#about"
+data-en="About"
+data-tr="Hakkımızda">
+About
+</a>
+</p>
+
+<p>
+<a href="index.html#services"
+data-en="Services"
+data-tr="Hizmetler">
+Services
+</a>
+</p>
+
+<p>
+<a href="menu.html"
+data-en="Catering Menus"
+data-tr="Catering Menüleri">
+Catering Menus
+</a>
+</p>
+<a href="index.html#packages"
+data-en="Packages"
+data-tr="Paketler">
+Packages
+</a>
+<p>
+<a href="index.html#gallery"
+data-en="Gallery"
+data-tr="Galeri">
+Gallery
+</a>
+</p>
+<p>
+<a href="index.html#contact"
+data-en="Contact"
+data-tr="İletişim">
+Contact
+</a>
+</p>
+
+</div>
+
+<div>
+
+<h3>Contact</h3>
+
+<p>📍 Marmaris / Muğla</p>
+
+<p>📞 +90 532 569 50 40</p>
+
+<p>📧 info@suffecatering.com</p>
+
+<p>🕒 Every Day 08:00 - 22:00</p>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+© 2026 Suffe Catering. All Rights Reserved.
+
+</div>
+
+</footer>
+<script>
+
+const menuToggle = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".menu");
+
+menuToggle.addEventListener("click", function () {
+    menu.classList.toggle("active");
+});
+
+document.querySelectorAll(".menu a").forEach(function(link){
+    link.addEventListener("click", function(){
+        menu.classList.remove("active");
+    });
+});
+
+</script>
+<script>
+
+const trBtn = document.getElementById("tr-btn");
+const enBtn = document.getElementById("en-btn");
+
+function changeLanguage(lang){
+
+document.querySelectorAll("[data-tr]").forEach(function(item){
+
+if(lang==="tr"){
+
+item.innerHTML=item.dataset.tr;
+
+}else{
+
+item.innerHTML=item.dataset.en;
+
+}
+
+});
+
+}
+
+trBtn.addEventListener("click", function () {
+    changeLanguage("tr");
+});
+
+enBtn.addEventListener("click", function () {
+    changeLanguage("en");
+});
+
+changeLanguage("en");
+
+
+</script>
+
+</body>
+</html>

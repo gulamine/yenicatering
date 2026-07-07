@@ -1,0 +1,2574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Suffe Catering | Luxury Catering & Event Organization</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+html{
+scroll-behavior:smooth;
+}
+body
+
+{
+font-family:Arial,sans-serif;
+background:#f8f8f8;
+}
+
+
+
+/* HEADER */
+
+.header{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:18px 70px;
+
+background:white;
+
+box-shadow:0 3px 15px rgba(0,0,0,.08);
+
+
+top:0;
+z-index:999;
+
+}
+
+.logo img{
+
+height:90px;
+
+}
+
+.menu{
+
+display:flex;
+gap:35px;
+
+}
+
+.menu a{
+
+text-decoration:none;
+
+color:#333;
+
+font-size:18px;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.menu a:hover{
+
+color:#6B7D1E;
+
+}
+
+.book-btn{
+
+background:#B98A28;
+
+color:white;
+
+padding:14px 30px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.book-btn:hover{
+
+background:#6B7D1E;
+
+}
+/* HERO DESKTOP */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:80px 10%;
+    gap:60px;
+    background:#f8f8f8;
+}
+
+.hero-left{
+    flex:1;
+}
+
+.hero-right{
+    flex:1;
+    text-align:right;
+}
+
+.hero-right img{
+    width:100%;
+    max-width:650px;
+    border-radius:20px;
+    display:block;
+}
+
+.hero-subtitle{
+    color:#B98A28;
+    font-size:18px;
+    letter-spacing:2px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:70px;
+    line-height:1.1;
+    color:#222;
+    margin-bottom:25px;
+}
+
+.hero-text{
+    font-size:20px;
+    color:#666;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:20px;
+}
+
+.hero-btn{
+    background:#B98A28;
+    color:#fff;
+    padding:16px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.hero-btn-outline{
+    border:2px solid #B98A28;
+    color:#B98A28;
+    padding:16px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+}
+@media (max-width:900px){
+
+/* HEADER */
+
+.header{
+    padding:15px 20px;
+    position:relative;
+}
+
+.logo img{
+    height:55px;
+}
+
+.menu-toggle{
+    display:block;
+    font-size:32px;
+    cursor:pointer;
+}
+
+.menu{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    background:#fff;
+    flex-direction:column;
+    align-items:center;
+    padding:20px 0;
+    box-shadow:0 10px 20px rgba(0,0,0,.15);
+}
+
+.menu.active{
+    display:flex;
+}
+
+.menu a{
+    width:100%;
+    text-align:center;
+    padding:16px;
+    font-size:18px;
+    border-bottom:1px solid #eee;
+}
+
+.menu a:last-child{
+    border-bottom:none;
+}
+
+.language-switcher,
+.book-btn{
+    display:none;
+}
+
+/* HERO */
+
+.hero{
+    min-height:70vh;
+    padding:40px 20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    gap:30px;
+}
+
+.hero-left,
+.hero-right{
+    width:100%;
+}
+
+.hero-right img{
+    width:100%;
+    max-width:350px;
+    margin:auto;
+    display:block;
+}
+
+.hero-subtitle{
+    font-size:13px;
+    letter-spacing:2px;
+    margin-bottom:12px;
+}
+
+.hero h1{
+    font-size:34px;
+    line-height:1.2;
+    margin-bottom:15px;
+}
+
+.hero-text{
+    font-size:15px;
+    line-height:1.6;
+    margin-bottom:20px;
+}
+
+.hero-buttons{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.hero-btn,
+.hero-btn-outline{
+    width:100%;
+    padding:14px;
+    font-size:16px;
+}
+
+}
+
+
+/* ABOUT */
+
+.about{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:70px;
+
+padding:120px 10%;
+
+background:white;
+
+flex-wrap:wrap;
+
+}
+
+.about-image{
+
+flex:1;
+
+min-width:350px;
+
+}
+
+.about-image img{
+
+width:100%;
+
+border-radius:25px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+.about-content{
+
+flex:1;
+
+min-width:350px;
+
+}
+
+.about-content h4{
+
+color:#B98A28;
+
+letter-spacing:3px;
+
+margin-bottom:15px;
+
+}
+
+.about-content h2{
+
+font-size:48px;
+
+margin-bottom:25px;
+
+color:#222;
+
+}
+
+.about-content p{
+
+font-size:18px;
+
+line-height:1.8;
+
+color:#666;
+
+margin-bottom:30px;
+
+}
+
+.about-list{
+
+display:grid;
+
+gap:15px;
+
+font-size:18px;
+
+margin-bottom:40px;
+
+}
+
+.about-boxes{
+
+display:flex;
+
+gap:25px;
+
+flex-wrap:wrap;
+
+}
+
+.box{
+
+background:#B98A28;
+
+color:white;
+
+padding:30px;
+
+border-radius:20px;
+
+text-align:center;
+
+min-width:150px;
+
+}
+
+.box h3{
+
+font-size:40px;
+
+margin-bottom:10px;
+
+}
+
+.box span{
+
+font-size:16px;
+
+}
+/* SERVICES */
+
+.services{
+
+padding:120px 10%;
+
+background:#f8f8f8;
+
+text-align:center;
+
+}
+
+.services h4{
+
+color:#B98A28;
+
+letter-spacing:3px;
+
+margin-bottom:15px;
+
+}
+
+.services h2{
+
+font-size:48px;
+
+margin-bottom:60px;
+
+color:#222;
+
+}
+
+.services-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+}
+
+.service-card{
+
+background:white;
+
+padding:40px 30px;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.service-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.service-card h3{
+
+font-size:28px;
+
+margin-bottom:20px;
+
+color:#333;
+
+}
+
+.service-card p{
+
+font-size:17px;
+
+line-height:1.7;
+
+color:#666;
+
+}
+/* WHY CHOOSE US */
+
+.why{
+
+padding:120px 10%;
+
+background:white;
+
+text-align:center;
+
+}
+
+.why h4{
+
+color:#B98A28;
+
+letter-spacing:3px;
+
+margin-bottom:15px;
+
+}
+
+.why h2{
+
+font-size:48px;
+
+margin-bottom:60px;
+
+color:#222;
+
+}
+
+.why-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+}
+
+.why-card{
+
+background:#f8f8f8;
+
+padding:40px 30px;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.why-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.icon{
+
+font-size:50px;
+
+margin-bottom:20px;
+
+}
+
+.why-card h3{
+
+font-size:28px;
+
+margin-bottom:15px;
+
+color:#333;
+
+}
+
+.why-card p{
+
+font-size:17px;
+
+line-height:1.7;
+
+color:#666;
+
+}
+/* GALLERY */
+
+.gallery{
+
+padding:120px 10%;
+
+background:#f8f8f8;
+
+text-align:center;
+
+}
+
+.gallery h4{
+
+color:#B98A28;
+
+letter-spacing:3px;
+
+margin-bottom:15px;
+
+}
+
+.gallery h2{
+
+font-size:48px;
+
+margin-bottom:60px;
+
+color:#222;
+
+}
+
+.gallery-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:25px;
+
+}
+
+.gallery-container img{
+
+width:100%;
+
+height:280px;
+
+object-fit:cover;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+transition:.3s;
+
+}
+
+.gallery-container img:hover{
+
+transform:scale(1.05);
+
+box-shadow:0 20px 40px rgba(0,0,0,.25);
+
+}
+.gallery-img{
+cursor:pointer;
+}
+.lightbox{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.9);
+justify-content:center;
+align-items:center;
+z-index:99999;
+}
+
+.lightbox.active{
+display:flex;
+}
+
+.lightbox img{
+max-width:90%;
+max-height:90%;
+border-radius:15px;
+box-shadow:0 20px 50px rgba(0,0,0,.5);
+}
+
+.close-lightbox{
+position:absolute;
+top:20px;
+right:30px;
+font-size:45px;
+color:white;
+cursor:pointer;
+font-weight:bold;
+}
+
+
+/* PACKAGES */
+
+.packages{
+
+padding:120px 10%;
+
+background:white;
+
+text-align:center;
+
+}
+
+.packages h4{
+
+color:#B98A28;
+
+letter-spacing:3px;
+
+margin-bottom:15px;
+
+}
+
+.packages h2{
+
+font-size:48px;
+
+margin-bottom:60px;
+
+color:#222;
+
+}
+
+.packages-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+}
+
+.package-card{
+
+background:#f8f8f8;
+
+padding:40px 30px;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.package-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.package-card h3{
+
+font-size:30px;
+
+margin-bottom:20px;
+
+color:#333;
+
+}
+
+.package-price{
+
+font-size:40px;
+
+color:#B98A28;
+
+font-weight:bold;
+
+margin-bottom:25px;
+
+}
+
+.package-card ul{
+
+list-style:none;
+
+padding:0;
+
+margin-bottom:30px;
+
+}
+
+.package-card li{
+
+padding:10px 0;
+
+color:#666;
+
+font-size:17px;
+
+}
+
+.package-btn{
+
+display:inline-block;
+
+padding:15px 35px;
+
+background:#B98A28;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:50px;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.package-btn:hover{
+
+background:#6B7D1E;
+
+}
+/* REVIEWS */
+
+.reviews{
+
+padding:120px 10%;
+
+background:#f8f8f8;
+
+text-align:center;
+
+}
+
+.reviews h4{
+
+color:#B98A28;
+
+letter-spacing:3px;
+
+margin-bottom:15px;
+
+}
+
+.reviews h2{
+
+font-size:48px;
+
+margin-bottom:60px;
+
+color:#222;
+
+}
+
+.reviews-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:30px;
+
+}
+
+.review-card{
+
+background:white;
+
+padding:35px;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.review-card:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.stars{
+
+font-size:24px;
+
+color:#f5b301;
+
+margin-bottom:20px;
+
+}
+
+.review-card p{
+
+font-size:17px;
+
+line-height:1.8;
+
+color:#666;
+
+margin-bottom:25px;
+
+font-style:italic;
+
+}
+
+.review-card h3{
+
+font-size:22px;
+
+color:#333;
+
+}
+
+.review-card span{
+
+color:#B98A28;
+
+font-size:15px;
+
+}
+/* RESERVATION */
+
+.reservation{
+
+padding:120px 10%;
+
+background:white;
+
+text-align:center;
+
+}
+
+.reservation h4{
+
+color:#B98A28;
+
+letter-spacing:3px;
+
+margin-bottom:15px;
+
+}
+
+.reservation h2{
+
+font-size:48px;
+
+margin-bottom:60px;
+
+color:#222;
+
+}
+
+.reservation-form{
+
+max-width:900px;
+
+margin:auto;
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:20px;
+
+}
+
+.reservation-form input,
+.reservation-form select,
+.reservation-form textarea{
+
+width:100%;
+
+padding:18px;
+
+font-size:16px;
+
+border:1px solid #ddd;
+
+border-radius:12px;
+
+outline:none;
+
+}
+
+.reservation-form textarea{
+
+height:160px;
+
+resize:none;
+
+grid-column:1/-1;
+
+}
+
+.reservation-btn{
+
+grid-column:1/-1;
+
+padding:18px;
+
+background:#B98A28;
+
+color:white;
+
+font-size:18px;
+
+font-weight:bold;
+
+border:none;
+
+border-radius:50px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.reservation-btn:hover{
+
+background:#6B7D1E;
+
+}
+/* CONTACT */
+
+.contact{
+
+padding:120px 10%;
+
+background:#f8f8f8;
+
+text-align:center;
+
+}
+
+.contact h4{
+
+color:#B98A28;
+
+letter-spacing:3px;
+
+margin-bottom:15px;
+
+}
+
+.contact h2{
+
+font-size:48px;
+
+margin-bottom:60px;
+
+color:#222;
+
+}
+
+.contact-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+
+gap:40px;
+
+align-items:start;
+
+}
+
+.contact-info{
+
+background:white;
+
+padding:40px;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+text-align:left;
+
+}
+
+.contact-info h3{
+
+margin-bottom:30px;
+
+font-size:30px;
+
+color:#333;
+
+}
+
+.contact-info p{
+
+font-size:18px;
+
+margin-bottom:20px;
+
+color:#666;
+
+line-height:1.8;
+
+}
+
+.contact-map iframe{
+
+width:100%;
+
+height:450px;
+
+border:none;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+/* WHATSAPP */
+
+.whatsapp{
+
+position:fixed;
+
+bottom:25px;
+
+right:25px;
+
+width:70px;
+
+height:70px;
+
+background:#25D366;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:38px;
+
+text-decoration:none;
+
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+transition:.3s;
+
+z-index:9999;
+
+}
+
+.whatsapp:hover{
+
+transform:scale(1.1);
+
+background:#1EBE5D;
+
+}
+/* FOOTER */
+
+.footer{
+
+background:#222;
+
+color:white;
+
+padding:70px 10% 30px;
+
+}
+
+.footer-container{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:40px;
+
+margin-bottom:40px;
+
+}
+
+.footer h3{
+
+color:#B98A28;
+
+margin-bottom:20px;
+
+font-size:24px;
+
+}
+
+.footer p,
+.footer a{
+
+color:#ddd;
+
+text-decoration:none;
+
+line-height:2;
+
+font-size:16px;
+
+}
+
+.footer a:hover{
+
+color:#B98A28;
+
+}
+
+.footer-bottom{
+
+text-align:center;
+
+padding-top:30px;
+
+border-top:1px solid rgba(255,255,255,.1);
+
+color:#aaa;
+
+font-size:15px;
+
+}
+/* LANGUAGE */
+
+.language-switcher{
+
+display:flex;
+
+gap:10px;
+
+align-items:center;
+
+}
+
+.language-switcher button{
+
+background:white;
+
+border:2px solid #B98A28;
+
+color:#B98A28;
+
+padding:8px 15px;
+
+border-radius:25px;
+
+cursor:pointer;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+.language-switcher button:hover{
+
+background:#B98A28;
+
+color:white;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+
+<div class="logo">
+
+<a href="index.html">
+
+<img src="images/logo/suffe-logo.png" alt="Suffe Catering">
+
+</a>
+
+</div>
+
+<div class="menu-toggle" id="menu-toggle">
+☰
+</div>
+<div class="menu">
+
+<a href="#home" id="nav-home">Home</a>
+
+<a href="#about" id="nav-about">About</a>
+
+<a href="#services" id="nav-services">Services</a>
+
+<a href="#gallery" id="nav-gallery">Gallery</a>
+
+<a href="menu.html" id="nav-menu">Catering Menus</a>
+
+<a href="#packages" id="nav-packages">Packages</a>
+
+<a href="#contact" id="nav-contact">Contact</a>
+
+</div>
+<div class="language-switcher">
+
+<button id="tr-btn">🇹🇷 TR</button>
+
+<button id="en-btn">🇬🇧 EN</button>
+
+</div>
+<a href="#reservation" class="book-btn">
+
+BOOK NOW
+
+</a>
+</div>
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+<div class="hero-left">
+
+<p class="hero-subtitle" id="hero-subtitle">
+Luxury Catering & Event Organization
+</p>
+
+<h1 id="hero-title">
+Creating<br>
+Unforgettable<br>
+Events
+</h1>
+
+<p class="hero-text" id="hero-text">
+Premium catering for weddings, yacht parties, corporate events and private celebrations in Marmaris.
+</p>
+
+<div class="hero-buttons">
+
+<a href="#reservation" class="hero-btn" id="header-book-btn">
+BOOK NOW
+</a>
+
+<a href="#services" class="hero-btn-outline" id="services-btn">
+Explore Services
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-right">
+
+<img src="images/hero/hero.jpg" alt="Luxury Catering">
+
+</div>
+
+</section>
+
+
+</div>
+
+<!-- ABOUT -->
+
+<section class="about" id="about">
+
+<div class="about-image">
+
+<img src="images/about/about.jpg" alt="About Suffe Catering">
+
+</div>
+
+<div class="about-content">
+
+<h4 id="about-small-title">
+ABOUT SUFFE CATERING
+</h4>
+
+<h2 id="about-title">
+Luxury Catering & Event Organization in Marmaris
+</h2>
+
+<p id="about-text">
+
+Suffe Catering provides premium catering and event organization services throughout Marmaris and surrounding areas. We specialize in weddings, funerals, corporate events, yacht parties, schools, villas, birthdays and private celebrations with exceptional quality and professional service.
+
+</p>
+
+<div class="about-list">
+
+<div id="about-list1">✔ Premium Catering Service</div>
+
+<div id="about-list2">✔ Professional Event Planning</div>
+
+<div id="about-list3">✔ Fresh Daily Ingredients</div>
+
+<div id="about-list4">✔ Experienced Catering Team</div>
+
+
+
+</div>
+
+<div class="about-boxes">
+
+<div class="box">
+
+<h3>500+</h3>
+
+<span id="about-box1">Events</span>
+
+</div>
+
+<div class="box">
+
+<h3>100%</h3>
+
+<span id="about-box2">Customer Satisfaction</span>
+
+</div>
+
+<div class="box">
+
+<h3>10+</h3>
+
+<span id="about-box3">Years Experience</span>
+
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- SERVICES -->
+
+<section class="services" id="services">
+
+<h4 id="services-small-title">OUR SERVICES</h4>
+
+<h2 id="services-title">Premium Catering & Event Services</h2>
+
+<div class="services-container">
+
+<div class="service-card">
+<h3 id="service1-title">💍 Wedding Catering</h3>
+
+<p id="service1-text">Elegant catering services for unforgettable wedding celebrations.</p>
+</div>
+
+<div class="service-card">
+<h3 id="service2-title">⚱️ Funeral Catering</h3>
+
+<p id="service2-text">Professional and respectful catering for funeral gatherings.</p>
+</div>
+
+<div class="service-card">
+<h3 id="service3-title">🏢 Corporate Events</h3>
+
+<p id="service3-text">Business meetings, conferences and company events.</p>
+</div>
+<div class="service-card">
+<h3 id="service4-title">🚤 Yacht Catering</h3>
+
+<p id="service4-text">Luxury catering services for yachts and private cruises.</p>
+</div>
+<div class="service-card">
+<h3 id="service5-title">🎂 Birthday Parties</h3>
+
+<p id="service5-text">Delicious menus for birthdays and private celebrations.</p>
+</div>
+<div class="service-card">
+
+<h3 id="service6-title">🏫 School Events</h3>
+
+<p id="service6-text">Catering for schools, graduations and educational events.</p>
+</div>
+<div class="service-card">
+
+<h3 id="service7-title">🍸 Cocktail Events</h3>
+
+<p id="service7-text">Elegant cocktail receptions and exclusive parties.</p>
+</div>
+
+<div class="service-card">
+<h3 id="service8-title">🏡 Private Villa Events</h3>
+
+<p id="service8-text">Premium catering for villas and private residences.</p>
+</div>
+
+</section>
+
+<!-- WHY CHOOSE US -->
+
+<section class="why">
+
+<h4 id="why-small-title">WHY CHOOSE US</h4>
+<h2 id="why-title">Why Clients Trust Suffe Catering</h2>
+
+<div class="why-container">
+
+<div class="why-card">
+<div class="icon">⭐</div>
+<h3 id="why1-title">Premium Quality</h3>
+
+<p id="why1-text">Fresh ingredients and carefully prepared menus for every event.</p>
+</div>
+
+<div class="why-card">
+<div class="icon">👨‍🍳</div>
+<h3 id="why2-title">Professional Team</h3>
+
+<p id="why2-text">Experienced chefs and friendly staff ready to serve your guests.</p>
+</div>
+<div class="why-card">
+<div class="icon">🚚</div>
+<h3 id="why3-title">On-Time Service</h3>
+
+<p id="why3-text">Always punctual and reliable catering service for every occasion.</p>
+</div>
+
+<div class="why-card">
+<div class="icon">🎉</div>
+<h3 id="why4-title">Custom Events</h3>
+
+<p id="why4-text">Every event is planned according to your wishes and requirements.</p>
+</div>
+
+<div class="why-card">
+<div class="icon">💰</div>
+<h3 id="why5-title">Affordable Prices</h3>
+
+<p id="why5-text">Luxury catering services with competitive and transparent pricing.</p>
+</div>
+
+<div class="why-card">
+<div class="icon">❤️</div>
+<h3 id="why6-title">Customer Satisfaction</h3>
+
+<p id="why6-text">We work hard to make every guest happy and every event unforgettable.</p>
+</div>
+
+</div>
+
+</section>
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+
+
+<h4 id="gallery-small-title">OUR GALLERY</h4>
+
+<h2 id="gallery-title">Memorable Events We Cater</h2>
+
+<div class="gallery-container">
+<img src="images/gallery/gallery1.jpg" alt="Wedding" class="gallery-img">
+
+<img src="images/gallery/gallery2.jpg" alt="Corporate" class="gallery-img">
+
+<img src="images/gallery/gallery3.jpg" alt="Yacht" class="gallery-img">
+
+<img src="images/gallery/gallery4.jpg" alt="Birthday" class="gallery-img">
+
+<img src="images/gallery/gallery5.jpg" alt="Cocktail" class="gallery-img">
+
+<img src="images/gallery/gallery6.jpg" alt="Funeral" class="gallery-img">
+
+</div>
+
+</section>
+<!-- PACKAGES -->
+<section class="packages" id="packages">
+
+
+<h4 id="packages-small-title">OUR PACKAGES</h4>
+
+<h2 id="packages-title">Choose the Perfect Catering Package</h2>
+
+<div class="packages-container">
+
+<div class="package-card">
+
+<h3 id="package1-title">🥉 Bronze</h3>
+
+<div class="package-price" id="package1-price">
+Starting From $299
+</div>
+
+<ul>
+
+<li>✔ Up to 30 Guests</li>
+
+<li>✔ Buffet Menu</li>
+
+<li>✔ Professional Staff</li>
+
+<li>✔ Soft Drinks</li>
+
+</ul>
+<a href="#" class="package-btn" id="package1-btn">
+Book Package
+</a>
+
+</div>
+
+<div class="package-card">
+<h3 id="package2-title">🥈 Silver</h3>
+
+<div class="package-price" id="package2-price">
+Starting From $599
+</div>
+
+<ul>
+
+<li>✔ Up to 60 Guests</li>
+
+<li>✔ Premium Buffet</li>
+
+<li>✔ Professional Staff</li>
+
+<li>✔ Desserts & Drinks</li>
+
+</ul>
+
+<a href="#" class="package-btn" id="package2-btn">
+Book Package
+</a>
+
+</div>
+
+<div class="package-card">
+
+<h3 id="package3-title">🥇 Gold</h3>
+
+<div class="package-price" id="package3-price">
+Starting From $999
+</div>
+
+<ul>
+
+<li>✔ Up to 120 Guests</li>
+
+<li>✔ Luxury Buffet</li>
+
+<li>✔ Waiter Service</li>
+
+<li>✔ Premium Desserts</li>
+
+</ul>
+<a href="#" class="package-btn" id="package3-btn">
+Book Package
+</a>
+
+</div>
+
+<div class="package-card">
+
+<h3 id="package4-title">💎 Platinum</h3>
+
+<div class="package-price" id="package4-price">
+Custom Quote
+</div>
+<ul>
+
+<li>✔ Unlimited Guests</li>
+
+<li>✔ Luxury Catering</li>
+
+<li>✔ Full Event Organization</li>
+
+<li>✔ VIP Service</li>
+
+</ul>
+
+<a href="#" class="package-btn" id="package4-btn">
+Contact Us
+</a>
+
+</div>
+
+</div>
+
+</section>
+<!-- CUSTOMER REVIEWS -->
+
+<section class="reviews">
+
+<h4 id="reviews-small-title">TESTIMONIALS</h4>
+
+<h2 id="reviews-title">What Our Clients Say</h2>
+
+<div class="reviews-container">
+
+<div class="review-card">
+
+<div class="stars">⭐⭐⭐⭐⭐</div>
+
+<p id="review1-text">
+"Everything was perfect! The food, service and organization exceeded our expectations."
+</p>
+
+<h3>Sarah Johnson</h3>
+
+<span id="review1-role">Wedding Event</span>
+
+</div>
+
+<div class="review-card">
+
+<div class="stars">⭐⭐⭐⭐⭐</div>
+
+<p id="review2-text">
+"We were very satisfied with the catering service. Professional team and delicious food."
+</p>
+
+<h3>Ahmet Yılmaz</h3>
+
+<span id="review2-role">Corporate Event</span>
+
+</div>
+
+<div class="review-card">
+
+<div class="stars">⭐⭐⭐⭐⭐</div>
+
+<p id="review3-text">
+"Our yacht party was amazing thanks to Suffe Catering. Highly recommended!"
+</p>
+
+<h3>Emily Brown</h3>
+
+<span id="review3-role">Yacht Party</span>
+
+</div>
+
+</div>
+
+</section>
+<!-- RESERVATION -->
+
+<section class="reservation" id="reservation">
+
+<h4 id="reservation-small-title">BOOK YOUR EVENT</h4>
+
+<h2 id="reservation-title">Request a Catering Reservation</h2>
+
+<form class="reservation-form">
+
+<input type="text" id="full-name" placeholder="Full Name" required>
+
+<input type="email" id="email" placeholder="Email Address" required>
+
+<input type="tel" id="phone" placeholder="Phone Number" required>
+
+<input type="date" required>
+
+<input type="text" id="location" placeholder="Event Location">
+
+<select required>
+
+<option value="" id="event-default">Select Event Type</option>
+
+<option id="event1">Wedding</option>
+
+<option id="event2">Funeral</option>
+
+<option id="event3">Corporate Event</option>
+
+<option id="event4">Birthday Party</option>
+
+<option id="event5">Yacht Catering</option>
+
+<option id="event6">School Event</option>
+
+<option id="event7">Cocktail Party</option>
+
+<option id="event8">Private Villa Event</option>
+</select>
+
+<input type="number" id="guests" placeholder="Number of Guests">
+
+<textarea id="message" placeholder="Tell us about your event..."></textarea>
+
+<button type="submit" class="reservation-btn" id="reservation-btn-text">
+Send Reservation Request
+</button>
+
+</form>
+
+</section>
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+
+<h4 id="contact-small-title">CONTACT US</h4>
+
+
+<h2 id="contact-title">Let's Plan Your Next Event</h2>
+
+<div class="contact-container">
+
+<div class="contact-info">
+
+    <h3 id="contact-box-title">Get In Touch</h3>
+
+<p>
+📍 Marmaris, Muğla, Türkiye
+</p>
+
+<p>📞 <a href="tel:+905325695040">+90 532 569 50 40</a></p>
+
+<p>📧 <a href="mailto:info@suffecatering.com">info@suffecatering.com</a></p>
+
+<p id="contact-hours">
+🕒 Monday - Sunday<br>
+08:00 AM - 10:00 PM
+</p>
+
+<p id="contact-description">
+We provide professional catering and event organization services for weddings, funerals, yacht parties, corporate events, birthdays, schools and private celebrations.
+</p>
+
+</div>
+
+<div class="contact-map">
+
+<iframe
+src="https://www.google.com/maps?q=Marmaris,+Muğla&output=embed"
+loading="lazy">
+</iframe>
+
+</div>
+
+</div>
+
+</section>
+<!-- WHATSAPP BUTTON -->
+
+<a
+href="https://wa.me/905325695040"
+class="whatsapp"
+target="_blank">
+
+💬
+</a>
+<!-- FOOTER -->
+
+<footer class="footer">
+
+<div class="footer-container">
+
+<div>
+<h3 id="footer-title">Suffe Catering</h3>
+
+<p id="footer-text1">
+Luxury Catering & Event Organization in Marmaris.
+</p>
+
+<p id="footer-text2">
+Making every event unforgettable with premium food and professional service.
+</p>
+
+</div>
+
+<div>
+<h3 id="footer-links-title">Quick Links</h3>
+
+<a href="#home" id="footer-home">Home</a>
+<a href="#about" id="footer-about">About</a>
+<a href="#services" id="footer-services">Services</a>
+<a href="#gallery" id="footer-gallery">Gallery</a>
+<a href="menu.html" id="footer-menu">Catering Menus</a>
+<a href="#packages" id="footer-packages">Packages</a>
+<a href="#contact" id="footer-contact">Contact</a>
+<h3>Contact</h3>
+
+<p>📍 Marmaris, Muğla, Türkiye</p>
+
+<p>📞 <a href="tel:+905325695040">+90 532 569 50 40</a></p>
+
+<p>📧 <a href="mailto:info@suffecatering.com">info@suffecatering.com</a></p>
+
+<p>🕒 Every Day<br>08:00 - 22:00</p>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+© 2026 Suffe Catering. All Rights Reserved.
+
+</div>
+
+</footer>
+
+<div id="lightbox" class="lightbox">
+
+    <span class="close-lightbox">&times;</span>
+
+    <img id="lightbox-img" src="" alt="Gallery Image">
+
+</div>
+
+<script>
+
+
+const trBtn = document.getElementById("tr-btn");
+const enBtn = document.getElementById("en-btn");
+const translations = {
+    tr: {
+        navHome: "Ana Sayfa",
+        navAbout: "Hakkımızda",
+        navServices: "Hizmetler",
+        navGallery: "Galeri",
+        navMenu: "Catering Menüleri",
+        navPackages: "Paketler",
+        navContact: "İletişim",
+
+        aboutSmallTitle: "SUFFE CATERING HAKKINDA",
+        aboutTitle: "Marmaris'te Lüks Catering ve Organizasyon",
+        aboutText: "Suffe Catering; Marmaris ve çevresinde düğün, cenaze, kurumsal etkinlikler, yat organizasyonları, okullar, villalar, doğum günleri ve özel davetler için profesyonel catering ve organizasyon hizmeti sunmaktadır.",
+
+        aboutList1: "✔ Premium Catering Hizmeti",
+aboutList2: "✔ Profesyonel Organizasyon Planlama",
+aboutList3: "✔ Günlük Taze Malzemeler",
+aboutList4: "✔ Deneyimli Catering Ekibi",
+
+aboutBox1: "Organizasyon",
+aboutBox2: "Müşteri Memnuniyeti",
+aboutBox3: "Yıllık Deneyim",
+
+        servicesSmallTitle: "HİZMETLERİMİZ",
+        servicesTitle: "Premium Catering ve Organizasyon Hizmetleri",
+
+        service1Title: "💍 Düğün Catering",
+        service1Text: "Unutulmaz düğün organizasyonları için şık catering hizmetleri.",
+         service2Title: "⚱️ Cenaze Catering",
+        service2Text: "Cenaze organizasyonlari için saygili ve profesyonel catering hizmeti.",
+        service3Title: "🏢 Kurumsal Etkinlikler",
+       service3Text: "İş toplantıları, konferanslar ve şirket organizasyonları için profesyonel catering hizmeti.",
+      service4Title: "🚤 Yat Catering",
+     service4Text: "Yatlar ve özel tekne turları için lüks catering hizmetleri.",
+      service5Title: "🎂 Doğum Günü Partileri",
+     service5Text: "Doğum günleri ve özel kutlamalar için lezzetli menüler.",
+     service6Title: "🏫 Okul Etkinlikleri",
+service6Text: "Okullar, mezuniyetler ve eğitim organizasyonları için profesyonel catering hizmeti.",
+service7Title: "🍸 Kokteyl Organizasyonları",
+service7Text: "Şık kokteyl davetleri ve özel organizasyonlar için profesyonel catering hizmeti.",
+service8Title: "🏡 Özel Villa Organizasyonları",
+service8Text: "Villalar ve özel konutlar için premium catering hizmeti.",
+whySmallTitle: "NEDEN BİZİ TERCİH ETMELİSİNİZ",
+whyTitle: "Müşteriler Neden Suffe Catering'e Güveniyor?",
+
+why1Title: "Premium Kalite",
+why1Text: "Her organizasyon için taze malzemeler ve özenle hazırlanmış menüler.",
+why2Title: "Profesyonel Ekip",
+why2Text: "Deneyimli şeflerimiz ve güler yüzlü ekibimiz misafirlerinize en iyi hizmeti sunar.",
+why3Title: "Zamanında Hizmet",
+why3Text: "Her organizasyonda zamanında ve güvenilir catering hizmeti sunuyoruz.",
+why4Title: "Size Özel Organizasyonlar",
+why4Text: "Her etkinliği istek ve ihtiyaçlarınıza göre özel olarak planlıyoruz.",
+
+why5Title: "Uygun Fiyatlar",
+why5Text: "Rekabetçi ve şeffaf fiyatlarla lüks catering hizmeti sunuyoruz.",
+
+why6Title: "Müşteri Memnuniyeti",
+why6Text: "Her misafirin mutlu ayrılması ve her organizasyonun unutulmaz olması için çalışıyoruz.",
+gallerySmallTitle: "GALERİMİZ",
+galleryTitle: "Hizmet Verdiğimiz Unutulmaz Organizasyonlar",
+
+packagesSmallTitle: "PAKETLERİMİZ",
+packagesTitle: "Size Uygun Catering Paketini Seçin",
+
+package1Title: "🥉 Bronz",
+package1Price: "₺299'dan Başlayan",
+package1Btn: "Paketi Seç",
+package2Title: "🥈 Gümüş",
+package2Price: "₺599'dan Başlayan",
+package2Btn: "Paketi Seç",
+
+package3Title: "🥇 Altın",
+package3Price: "₺999'dan Başlayan",
+package3Btn: "Paketi Seç",
+
+package4Title: "💎 Platinum",
+package4Price: "Özel Fiyat Teklifi",
+package4Btn: "İletişime Geç",
+
+reviewsSmallTitle: "MÜŞTERİ YORUMLARI",
+reviewsTitle: "Müşterilerimiz Ne Diyor?",
+
+review1Text: "\"Her şey mükemmeldi! Yemekler, hizmet ve organizasyon beklentilerimizin üzerindeydi.\"",
+review1Role: "Düğün Organizasyonu",
+
+review2Text: "\"Catering hizmetinden çok memnun kaldık. Profesyonel ekip ve harika lezzetler vardı.\"",
+review2Role: "Kurumsal Etkinlik",
+
+review3Text: "\"Yat organizasyonumuz Suffe Catering sayesinde harika geçti. Kesinlikle tavsiye ederiz!\"",
+review3Role: "Yat Organizasyonu",
+
+reservationSmallTitle: "REZERVASYON",
+reservationTitle: "Catering Rezervasyonu Oluşturun",
+reservationBtn: "Rezervasyon Talebi Gönder",
+
+
+fullName: "Ad Soyad",
+email: "E-posta Adresi",
+phone: "Telefon Numarası",
+location: "Etkinlik Konumu",
+guests: "Misafir Sayısı",
+message: "Etkinliğiniz hakkında bize bilgi verin...",
+
+eventDefault: "Etkinlik Türünü Seç",
+event1: "Düğün",
+event2: "Cenaze",
+event3: "Kurumsal Etkinlik",
+event4: "Doğum Günü",
+event5: "Yat Catering",
+event6: "Okul Etkinliği",
+event7: "Kokteyl Organizasyonu",
+event8: "Özel Villa Organizasyonu",
+
+contactSmallTitle: "İLETİŞİM",
+contactTitle: "Bir Sonraki Organizasyonunuzu Planlayalım",
+contactBoxTitle: "Bize Ulaşın",
+
+contactHours: "🕒 Pazartesi - Pazar<br>08:00 - 22:00",
+contactDescription: "Düğün, cenaze, yat organizasyonları, kurumsal etkinlikler, doğum günleri, okul organizasyonları ve özel davetler için profesyonel catering ve organizasyon hizmeti sunuyoruz.",
+
+footerTitle: "Suffe Catering",
+footerText1: "Marmaris'te Lüks Catering ve Organizasyon.",
+footerText2: "Premium lezzetler ve profesyonel hizmet ile her organizasyonu unutulmaz kılıyoruz.",
+
+
+footerLinksTitle: "Hızlı Bağlantılar",
+footerHome: "Ana Sayfa",
+footerAbout: "Hakkımızda",
+footerServices: "Hizmetler",
+footerGallery: "Galeri",
+footerMenu: "Catering Menüleri",
+navMenu: "Catering Menüleri",
+footerPackages: "Paketler",
+footerContact: "İletişim",
+
+
+    },
+
+
+
+
+
+
+    en: {
+        navHome: "Home",
+        navAbout: "About",
+        navServices: "Services",
+        navGallery: "Gallery",
+        navMenu: "Catering Menus",
+        navPackages: "Packages",
+        navContact: "Contact",
+
+        aboutSmallTitle: "ABOUT SUFFE CATERING",
+        aboutTitle: "Luxury Catering & Event Organization in Marmaris",
+        aboutText: "Suffe Catering provides premium catering and event organization services throughout Marmaris and surrounding areas. We specialize in weddings, funerals, corporate events, yacht parties, schools, villas, birthdays and private celebrations with exceptional quality and professional service.",
+ aboutList1: "✔ Premium Catering Service",
+aboutList2: "✔ Professional Event Planning",
+aboutList3: "✔ Fresh Daily Ingredients",
+aboutList4: "✔ Experienced Catering Team",
+aboutBox1: "Events",
+aboutBox2: "Customer Satisfaction",
+aboutBox3: "Years Experience",
+
+
+
+
+        servicesSmallTitle: "OUR SERVICES",
+        servicesTitle: "Premium Catering & Event Services",
+
+        service1Title: "💍 Wedding Catering",
+        service1Text: "Elegant catering services for unforgettable wedding celebrations.",
+
+       
+        service2Title: "⚱️ Funeral Catering",
+        service2Text: "Professional and respectful catering for funeral gatherings.",
+        service3Title: "🏢 Corporate Events",
+service3Text: "Business meetings, conferences and company events.",
+service4Title: "🚤 Yacht Catering",
+service4Text: "Luxury catering services for yachts and private cruises.",
+
+    service5Title: "🎂 Birthday Parties",
+service5Text: "Delicious menus for birthdays and private celebrations.",
+service6Title: "🏫 School Events",
+service6Text: "Catering for schools, graduations and educational events.",
+service7Title: "🍸 Cocktail Events",
+service7Text: "Elegant cocktail receptions and exclusive parties.",
+service8Title: "🏡 Private Villa Events",
+service8Text: "Premium catering for villas and private residences.",
+whySmallTitle: "WHY CHOOSE US",
+whyTitle: "Why Clients Trust Suffe Catering",
+
+why1Title: "Premium Quality",
+why1Text: "Fresh ingredients and carefully prepared menus for every event.",
+
+why2Title: "Professional Team",
+why2Text: "Experienced chefs and friendly staff ready to serve your guests.",
+
+why3Title: "On-Time Service",
+why3Text: "Always punctual and reliable catering service for every occasion.",
+
+why4Title: "Custom Events",
+why4Text: "Every event is planned according to your wishes and requirements.",
+why5Title: "Affordable Prices",
+why5Text: "Luxury catering services with competitive and transparent pricing.",
+
+why6Title: "Customer Satisfaction",
+why6Text: "We work hard to make every guest happy and every event unforgettable.",
+gallerySmallTitle: "OUR GALLERY",
+galleryTitle: "Memorable Events We Cater",
+
+
+packagesSmallTitle: "OUR PACKAGES",
+packagesTitle: "Choose the Perfect Catering Package",
+
+package1Title: "🥉 Bronze",
+package1Price: "Starting From ₺299",
+package1Btn: "Book Package",
+
+package2Title: "🥈 Silver",
+package2Price: "Starting From ₺599",
+package2Btn: "Book Package",
+
+package3Title: "🥇 Gold",
+package3Price: "Starting From ₺999",
+package3Btn: "Book Package",
+
+package4Title: "💎 Platinum",
+package4Price: "Custom Quote",
+package4Btn: "Contact Us",
+
+reviewsSmallTitle: "TESTIMONIALS",
+reviewsTitle: "What Our Clients Say",
+
+review1Text: "\"Everything was perfect! The food, service and organization exceeded our expectations.\"",
+
+review1Role: "Wedding Event",
+
+review2Text: "\"We were very satisfied with the catering service. Professional team and delicious food.\"",
+review2Role: "Corporate Event",
+
+review3Text: "\"Our yacht party was amazing thanks to Suffe Catering. Highly recommended!\"",
+review3Role: "Yacht Party",
+
+reservationSmallTitle: "BOOK YOUR EVENT",
+reservationTitle: "Request a Catering Reservation",
+reservationBtn: "Send Reservation Request",
+
+fullName: "Full Name",
+email: "Email Address",
+phone: "Phone Number",
+location: "Event Location",
+guests: "Number of Guests",
+message: "Tell us about your event...",
+
+eventDefault: "Select Event Type",
+event1: "Wedding",
+event2: "Funeral",
+event3: "Corporate Event",
+event4: "Birthday Party",
+event5: "Yacht Catering",
+event6: "School Event",
+event7: "Cocktail Party",
+event8: "Private Villa Event",
+
+
+contactSmallTitle: "CONTACT US",
+contactTitle: "Let's Plan Your Next Event",
+contactBoxTitle: "Get In Touch",
+
+contactHours: "🕒 Monday - Sunday<br>08:00 AM - 10:00 PM",
+contactDescription: "We provide professional catering and event organization services for weddings, funerals, yacht parties, corporate events, birthdays, schools and private celebrations.",
+
+
+footerTitle: "Suffe Catering",
+footerText1: "Luxury Catering & Event Organization in Marmaris.",
+footerText2: "Making every event unforgettable with premium food and professional service.",
+
+footerLinksTitle: "Quick Links",
+footerHome: "Home",
+footerAbout: "About",
+footerServices: "Services",
+footerGallery: "Gallery",
+footerMenu: "Catering Menus",
+navMenu: "Catering Menus",
+footerPackages: "Packages",
+footerContact: "Contact",
+    }
+
+
+
+};
+
+
+
+
+trBtn.addEventListener("click", function(){
+
+if(window.innerWidth <= 900){
+    document.getElementById("hero-title").innerHTML =
+    "Unutulmaz<br>Organizasyonlar";
+}else{
+    document.getElementById("hero-title").innerHTML =
+    "Marmaris'te Unutulmaz Organizasyonlar";
+}
+
+document.getElementById("hero-subtitle").innerHTML =
+"Lüks Catering ve Organizasyon";
+
+document.getElementById("hero-text").innerHTML =
+"Suffe Catering; düğün, cenaze, yat organizasyonları, kurumsal etkinlikler, doğum günleri ve özel davetler için profesyonel catering hizmeti sunar.";
+
+document.getElementById("header-book-btn").innerHTML =
+"Rezervasyon Yap";
+
+document.getElementById("services-btn").innerHTML =
+"Hizmetleri İncele";
+
+document.getElementById("services-btn").innerHTML =
+"Hizmetleri İncele";
+
+document.getElementById("nav-home").innerHTML = translations.tr.navHome;
+document.getElementById("nav-about").innerHTML = translations.tr.navAbout;
+document.getElementById("nav-services").innerHTML = translations.tr.navServices;
+document.getElementById("nav-gallery").innerHTML = translations.tr.navGallery;
+document.getElementById("nav-packages").innerHTML = translations.tr.navPackages;
+document.getElementById("nav-contact").innerHTML = translations.tr.navContact;
+
+document.getElementById("about-small-title").innerHTML = translations.tr.aboutSmallTitle;
+document.getElementById("about-title").innerHTML = translations.tr.aboutTitle;
+document.getElementById("about-text").innerHTML = translations.tr.aboutText;
+document.getElementById("about-list1").innerHTML = translations.tr.aboutList1;
+document.getElementById("about-list2").innerHTML = translations.tr.aboutList2;
+document.getElementById("about-list3").innerHTML = translations.tr.aboutList3;
+document.getElementById("about-list4").innerHTML = translations.tr.aboutList4;
+document.getElementById("about-box1").innerHTML = translations.tr.aboutBox1;
+document.getElementById("about-box2").innerHTML = translations.tr.aboutBox2;
+document.getElementById("about-box3").innerHTML = translations.tr.aboutBox3;
+
+
+
+
+document.getElementById("services-small-title").innerHTML = translations.tr.servicesSmallTitle;
+document.getElementById("services-title").innerHTML = translations.tr.servicesTitle;
+
+document.getElementById("service1-title").innerHTML = translations.tr.service1Title;
+document.getElementById("service1-text").innerHTML = translations.tr.service1Text;
+document.getElementById("service2-title").innerHTML = translations.tr.service2Title;
+document.getElementById("service2-text").innerHTML = translations.tr.service2Text;
+document.getElementById("service3-title").innerHTML = translations.tr.service3Title;
+document.getElementById("service3-text").innerHTML = translations.tr.service3Text;
+document.getElementById("service4-title").innerHTML = translations.tr.service4Title;
+document.getElementById("service4-text").innerHTML = translations.tr.service4Text;
+document.getElementById("service5-title").innerHTML = translations.tr.service5Title;
+document.getElementById("service5-text").innerHTML = translations.tr.service5Text;
+document.getElementById("service6-title").innerHTML = translations.tr.service6Title;
+document.getElementById("service6-text").innerHTML = translations.tr.service6Text;
+document.getElementById("service7-title").innerHTML = translations.tr.service7Title;
+document.getElementById("service7-text").innerHTML = translations.tr.service7Text;
+document.getElementById("service8-title").innerHTML = translations.tr.service8Title;
+document.getElementById("service8-text").innerHTML = translations.tr.service8Text;
+
+document.getElementById("why-small-title").innerHTML = translations.tr.whySmallTitle;
+document.getElementById("why-title").innerHTML = translations.tr.whyTitle;
+document.getElementById("why1-title").innerHTML = translations.tr.why1Title;
+document.getElementById("why1-text").innerHTML = translations.tr.why1Text;
+document.getElementById("why2-title").innerHTML = translations.tr.why2Title;
+document.getElementById("why2-text").innerHTML = translations.tr.why2Text;
+document.getElementById("why3-title").innerHTML = translations.tr.why3Title;
+document.getElementById("why3-text").innerHTML = translations.tr.why3Text;
+document.getElementById("why4-title").innerHTML = translations.tr.why4Title;
+document.getElementById("why4-text").innerHTML = translations.tr.why4Text;
+document.getElementById("why5-title").innerHTML = translations.tr.why5Title;
+document.getElementById("why5-text").innerHTML = translations.tr.why5Text;
+document.getElementById("why6-title").innerHTML = translations.tr.why6Title;
+document.getElementById("why6-text").innerHTML = translations.tr.why6Text;
+document.getElementById("gallery-small-title").innerHTML = translations.tr.gallerySmallTitle;
+document.getElementById("gallery-title").innerHTML = translations.tr.galleryTitle;
+
+
+document.getElementById("packages-small-title").innerHTML = translations.tr.packagesSmallTitle;
+document.getElementById("packages-title").innerHTML = translations.tr.packagesTitle;
+
+document.getElementById("package1-title").innerHTML = translations.tr.package1Title;
+document.getElementById("package1-price").innerHTML = translations.tr.package1Price;
+document.getElementById("package1-btn").innerHTML = translations.tr.package1Btn;
+document.getElementById("package2-title").innerHTML = translations.tr.package2Title;
+document.getElementById("package2-price").innerHTML = translations.tr.package2Price;
+document.getElementById("package2-btn").innerHTML = translations.tr.package2Btn;
+
+document.getElementById("package3-title").innerHTML = translations.tr.package3Title;
+document.getElementById("package3-price").innerHTML = translations.tr.package3Price;
+document.getElementById("package3-btn").innerHTML = translations.tr.package3Btn;
+
+document.getElementById("package4-title").innerHTML = translations.tr.package4Title;
+document.getElementById("package4-price").innerHTML = translations.tr.package4Price;
+document.getElementById("package4-btn").innerHTML = translations.tr.package4Btn;
+
+document.getElementById("reviews-small-title").innerHTML = translations.tr.reviewsSmallTitle;
+document.getElementById("reviews-title").innerHTML = translations.tr.reviewsTitle;
+document.getElementById("review1-text").innerHTML = translations.tr.review1Text;
+document.getElementById("review1-role").innerHTML = translations.tr.review1Role;
+
+document.getElementById("review2-text").innerHTML = translations.tr.review2Text;
+document.getElementById("review2-role").innerHTML = translations.tr.review2Role;
+document.getElementById("review3-text").innerHTML = translations.tr.review3Text;
+document.getElementById("review3-role").innerHTML = translations.tr.review3Role;
+
+
+document.getElementById("header-book-btn").innerHTML = "REZERVASYON";
+
+
+document.getElementById("reservation-small-title").innerHTML = translations.tr.reservationSmallTitle;
+document.getElementById("reservation-title").innerHTML = translations.tr.reservationTitle;
+document.getElementById("reservation-btn-text").innerHTML = translations.tr.reservationBtn;
+
+document.getElementById("full-name").placeholder = translations.tr.fullName;
+document.getElementById("email").placeholder = translations.tr.email;
+document.getElementById("phone").placeholder = translations.tr.phone;
+document.getElementById("location").placeholder = translations.tr.location;
+document.getElementById("guests").placeholder = translations.tr.guests;
+document.getElementById("message").placeholder = translations.tr.message;
+document.getElementById("event-default").textContent = translations.tr.eventDefault;
+document.getElementById("event1").textContent = translations.tr.event1;
+document.getElementById("event2").textContent = translations.tr.event2;
+document.getElementById("event3").textContent = translations.tr.event3;
+document.getElementById("event4").textContent = translations.tr.event4;
+document.getElementById("event5").textContent = translations.tr.event5;
+document.getElementById("event6").textContent = translations.tr.event6;
+document.getElementById("event7").textContent = translations.tr.event7;
+document.getElementById("event8").textContent = translations.tr.event8;
+
+document.getElementById("contact-small-title").innerHTML = translations.tr.contactSmallTitle;
+document.getElementById("contact-title").innerHTML = translations.tr.contactTitle;
+document.getElementById("contact-box-title").innerHTML = translations.tr.contactBoxTitle;
+document.getElementById("contact-hours").innerHTML = translations.tr.contactHours;
+document.getElementById("contact-description").innerHTML = translations.tr.contactDescription;
+
+
+
+
+document.getElementById("footer-title").innerHTML = translations.tr.footerTitle;
+document.getElementById("footer-text1").innerHTML = translations.tr.footerText1;
+document.getElementById("footer-text2").innerHTML = translations.tr.footerText2;
+document.getElementById("footer-links-title").innerHTML = translations.tr.footerLinksTitle;
+document.getElementById("footer-home").innerHTML = translations.tr.footerHome;
+document.getElementById("footer-about").innerHTML = translations.tr.footerAbout;
+document.getElementById("footer-services").innerHTML = translations.tr.footerServices;
+document.getElementById("footer-gallery").innerHTML = translations.tr.footerGallery;
+
+document.getElementById("footer-menu").innerHTML = translations.tr.footerMenu;
+document.getElementById("nav-menu").innerHTML = translations.tr.navMenu;
+document.getElementById("footer-packages").innerHTML = translations.tr.footerPackages;
+document.getElementById("footer-contact").innerHTML = translations.tr.footerContact;
+});
+
+enBtn.addEventListener("click", function(){
+
+if(window.innerWidth <= 900){
+    document.getElementById("hero-title").innerHTML =
+    "Creating<br>Unforgettable<br>Events";
+}else{
+    document.getElementById("hero-title").innerHTML =
+    "Creating Unforgettable Events in Marmaris";
+}
+
+document.getElementById("hero-subtitle").innerHTML =
+"Luxury Catering & Event Organization";
+
+document.getElementById("hero-text").innerHTML =
+"From elegant weddings and yacht parties to corporate events and private celebrations, Suffe Catering delivers exceptional food and unforgettable experiences with premium service.";
+
+document.getElementById("header-book-btn").innerHTML =
+"Book Now";
+
+document.getElementById("services-btn").innerHTML =
+"Explore Services";
+
+document.getElementById("nav-home").innerHTML = translations.en.navHome;
+document.getElementById("nav-about").innerHTML = translations.en.navAbout;
+document.getElementById("nav-services").innerHTML = translations.en.navServices;
+document.getElementById("nav-gallery").innerHTML = translations.en.navGallery;
+document.getElementById("nav-packages").innerHTML = translations.en.navPackages;
+document.getElementById("nav-contact").innerHTML = translations.en.navContact;
+
+document.getElementById("about-small-title").innerHTML = translations.en.aboutSmallTitle;
+document.getElementById("about-title").innerHTML = translations.en.aboutTitle;
+document.getElementById("about-text").innerHTML = translations.en.aboutText;
+document.getElementById("about-list1").innerHTML = translations.en.aboutList1;
+document.getElementById("about-list2").innerHTML = translations.en.aboutList2;
+document.getElementById("about-list3").innerHTML = translations.en.aboutList3;
+document.getElementById("about-list4").innerHTML = translations.en.aboutList4;
+document.getElementById("about-box1").innerHTML = translations.en.aboutBox1;
+document.getElementById("about-box2").innerHTML = translations.en.aboutBox2;
+document.getElementById("about-box3").innerHTML = translations.en.aboutBox3;
+
+
+
+
+document.getElementById("services-small-title").innerHTML = translations.en.servicesSmallTitle;
+document.getElementById("services-title").innerHTML = translations.en.servicesTitle;
+document.getElementById("service1-title").innerHTML = translations.en.service1Title;
+document.getElementById("service1-text").innerHTML = translations.en.service1Text;
+document.getElementById("service2-title").innerHTML = translations.en.service2Title;
+document.getElementById("service2-text").innerHTML = translations.en.service2Text;
+document.getElementById("service3-title").innerHTML = translations.en.service3Title;
+document.getElementById("service3-text").innerHTML = translations.en.service3Text;
+document.getElementById("service4-title").innerHTML = translations.en.service4Title;
+document.getElementById("service4-text").innerHTML = translations.en.service4Text;
+document.getElementById("service5-title").innerHTML = translations.en.service5Title;
+document.getElementById("service5-text").innerHTML = translations.en.service5Text;
+document.getElementById("service6-title").innerHTML = translations.en.service6Title;
+document.getElementById("service6-text").innerHTML = translations.en.service6Text;
+document.getElementById("service7-title").innerHTML = translations.en.service7Title;
+document.getElementById("service7-text").innerHTML = translations.en.service7Text;
+document.getElementById("service8-title").innerHTML = translations.en.service8Title;
+document.getElementById("service8-text").innerHTML = translations.en.service8Text;
+
+
+document.getElementById("why-small-title").innerHTML = translations.en.whySmallTitle;
+document.getElementById("why-title").innerHTML = translations.en.whyTitle;
+document.getElementById("why1-title").innerHTML = translations.en.why1Title;
+document.getElementById("why1-text").innerHTML = translations.en.why1Text;
+document.getElementById("why2-title").innerHTML = translations.en.why2Title;
+document.getElementById("why2-text").innerHTML = translations.en.why2Text;
+document.getElementById("why3-title").innerHTML = translations.en.why3Title;
+document.getElementById("why3-text").innerHTML = translations.en.why3Text;
+document.getElementById("why4-title").innerHTML = translations.en.why4Title;
+document.getElementById("why4-text").innerHTML = translations.en.why4Text;
+document.getElementById("why5-title").innerHTML = translations.en.why5Title;
+document.getElementById("why5-text").innerHTML = translations.en.why5Text;
+document.getElementById("why6-title").innerHTML = translations.en.why6Title;
+document.getElementById("why6-text").innerHTML = translations.en.why6Text;
+
+document.getElementById("gallery-small-title").innerHTML = translations.en.gallerySmallTitle;
+document.getElementById("gallery-title").innerHTML = translations.en.galleryTitle;
+
+document.getElementById("packages-small-title").innerHTML = translations.en.packagesSmallTitle;
+document.getElementById("packages-title").innerHTML = translations.en.packagesTitle;
+
+document.getElementById("package1-title").innerHTML = translations.en.package1Title;
+document.getElementById("package1-price").innerHTML = translations.en.package1Price;
+document.getElementById("package1-btn").innerHTML = translations.en.package1Btn;
+document.getElementById("package2-title").innerHTML = translations.en.package2Title;
+document.getElementById("package2-price").innerHTML = translations.en.package2Price;
+document.getElementById("package2-btn").innerHTML = translations.en.package2Btn;
+
+document.getElementById("package3-title").innerHTML = translations.en.package3Title;
+document.getElementById("package3-price").innerHTML = translations.en.package3Price;
+document.getElementById("package3-btn").innerHTML = translations.en.package3Btn;
+
+document.getElementById("package4-title").innerHTML = translations.en.package4Title;
+document.getElementById("package4-price").innerHTML = translations.en.package4Price;
+document.getElementById("package4-btn").innerHTML = translations.en.package4Btn;
+
+document.getElementById("reviews-small-title").innerHTML = translations.en.reviewsSmallTitle;
+document.getElementById("reviews-title").innerHTML = translations.en.reviewsTitle;
+document.getElementById("review1-text").innerHTML = translations.en.review1Text;
+document.getElementById("review1-role").innerHTML = translations.en.review1Role;
+
+document.getElementById("review2-text").innerHTML = translations.en.review2Text;
+document.getElementById("review2-role").innerHTML = translations.en.review2Role;
+document.getElementById("review3-text").innerHTML = translations.en.review3Text;
+document.getElementById("review3-role").innerHTML = translations.en.review3Role;
+
+document.getElementById("header-book-btn").innerHTML = "BOOK NOW";
+
+document.getElementById("reservation-small-title").innerHTML = translations.en.reservationSmallTitle;
+document.getElementById("reservation-title").innerHTML = translations.en.reservationTitle;
+document.getElementById("reservation-btn-text").innerHTML = translations.en.reservationBtn;
+document.getElementById("event-default").textContent = translations.en.eventDefault;
+document.getElementById("event1").textContent = translations.en.event1;
+document.getElementById("event2").textContent = translations.en.event2;
+document.getElementById("event3").textContent = translations.en.event3;
+document.getElementById("event4").textContent = translations.en.event4;
+document.getElementById("event5").textContent = translations.en.event5;
+document.getElementById("event6").textContent = translations.en.event6;
+document.getElementById("event7").textContent = translations.en.event7;
+document.getElementById("event8").textContent = translations.en.event8;
+
+document.getElementById("full-name").placeholder = translations.en.fullName;
+document.getElementById("email").placeholder = translations.en.email;
+document.getElementById("phone").placeholder = translations.en.phone;
+document.getElementById("location").placeholder = translations.en.location;
+document.getElementById("guests").placeholder = translations.en.guests;
+document.getElementById("message").placeholder = translations.en.message;
+
+document.getElementById("contact-small-title").innerHTML = translations.en.contactSmallTitle;
+document.getElementById("contact-title").innerHTML = translations.en.contactTitle;
+document.getElementById("contact-box-title").innerHTML = translations.en.contactBoxTitle;
+document.getElementById("contact-hours").innerHTML = translations.en.contactHours;
+document.getElementById("contact-description").innerHTML = translations.en.contactDescription;
+
+
+document.getElementById("footer-title").innerHTML = translations.en.footerTitle;
+document.getElementById("footer-text1").innerHTML = translations.en.footerText1;
+document.getElementById("footer-text2").innerHTML = translations.en.footerText2;
+
+document.getElementById("footer-links-title").innerHTML = translations.en.footerLinksTitle;
+
+document.getElementById("footer-home").innerHTML = translations.en.footerHome;
+document.getElementById("footer-about").innerHTML = translations.en.footerAbout;
+document.getElementById("footer-services").innerHTML = translations.en.footerServices;
+document.getElementById("footer-gallery").innerHTML = translations.en.footerGallery;
+
+
+document.getElementById("footer-menu").innerHTML = translations.en.footerMenu;
+document.getElementById("nav-menu").innerHTML = translations.en.navMenu;
+
+document.getElementById("footer-packages").innerHTML = translations.en.footerPackages;
+document.getElementById("footer-contact").innerHTML = translations.en.footerContact;
+
+});
+
+const menuToggle = document.getElementById("menu-toggle");
+const menu = document.querySelector(".menu");
+
+menuToggle.addEventListener("click", function () {
+    menu.classList.toggle("active");
+});
+document.querySelectorAll(".menu a").forEach(function(link){
+    link.addEventListener("click", function(){
+        menu.classList.remove("active");
+    });
+});
+
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const closeLightbox = document.querySelector(".close-lightbox");
+
+document.querySelectorAll(".gallery-img").forEach(function(img){
+
+    img.addEventListener("click", function(){
+
+        lightbox.classList.add("active");
+
+        lightboxImg.src = this.src;
+
+        lightboxImg.alt = this.alt;
+
+    });
+
+});
+
+closeLightbox.addEventListener("click", function(){
+
+    lightbox.classList.remove("active");
+
+});
+
+lightbox.addEventListener("click", function(e){
+
+    if(e.target === lightbox){
+
+        lightbox.classList.remove("active");
+
+    }
+
+});
+</script>
+</body>
+</html>
